@@ -19,9 +19,7 @@ if os.path.exists(folder_path) and os.path.isdir(folder_path):
                 # Получение данных о названии файла и областях и добавление их в список
                 areas = json_data.get('areas', [])
                 # Убираем расширение .json из названия файла
-                data.append({'filename': os.path.splitext(
-                    filename)[0], 'areas': areas})
-
+                data.append({'filename': os.path.splitext(filename)[0], 'areas': areas})
 # Путь для сохранения файла
 output_file_path = 'zones.txt'
 
